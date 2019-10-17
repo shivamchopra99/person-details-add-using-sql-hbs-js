@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/persons.css">
+</head>
+<body>
+       
+    <a href="/add">Add Person</a>
+    <br>
+       <table id="xyz" border="1" cellspacing="10" cellpadding="10">
+
+        <tr class="abc">
+            <th class="abc" >Name</th>
+            <th class="abc">Age</th>
+            <th class="abc">City</th>
+        </tr>
+        {{#each persons as |person|}}
+        <tr class="abc">
+            <td class="abc">{{person.name}}</td>
+            <td class="abc">{{person.age}}</td>
+            <td class="abc">{{person.city}}</td>
+        </tr>
+        {{/each}}
+    </table> 
+</body>
+</html>
